@@ -9,7 +9,7 @@ The output will be placed under the folder:
 
 `target/site/resume.pdf`
 
-#Requirements
+##Requirements
 
-- Tex Distribution
+- Tex Distribution (MacOS Install -> `brew install Caskroom/cask/mactex`)
 - JRE (in order to run the embedded maven-wrapper latex plugin)
