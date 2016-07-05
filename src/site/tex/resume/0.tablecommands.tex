@@ -1,0 +1,24 @@
+\usepackage{multirow, tabu}
+\newcommand{\tableline}{\\ \tabucline{2-5}\multicolumn{1}{c|}{}&}
+\newcommand{\ini}{&x&&}
+\newcommand{\inter}{&&x&}
+\newcommand{\avan}{&&&x}
+\newcommand{\nextline}{\\ \tabucline[1pt]{1-5}}
+\newcommand{\finalize}{\nextline}
+\newcommand{\drawheader}{& & \multicolumn{3}{c}{Proficiency} \\ \tabucline[1pt]{3-5} \multicolumn{1}{ c }{}& & B & I & A\nextline}
+
+\newcommand{\createfirstline}[2]
+{
+\multicolumn{1}{c|}{\multirow{#2}{*}{#1}} &
+}
+
+\newcommand{\createline}[2]
+{
+\nextline \multicolumn{1}{c|}{\multirow{#2}{*}{#1}} &
+}
+
+\newcommand{\createitem}[1]
+{
+\multicolumn{1}{|c|}{#1}
+}
+\newcommand{\til}{\~{}}

@@ -1,0 +1,38 @@
+\documentclass[11.5pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+\usepackage{multicol}
+\colorlet{awesome}{awesome-nephritis}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\name{Glaucio}{Melo}
+\position{[Computer Scientist{\enskip\textbar\enskip}Musician]}
+
+\mobile{(+55) 992.537.268} 
+\email{glaucio.melo@gmail.com}
+\skype{gm2.glaucio}
+\twitter{glauciogmm}
+\linkedin{glauciom}
+\github{glauciom}
+
+\input{resume/0.tablecommands.tex}
+
+\begin{document}
+
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {Glaucio Melo~~~·~~~about.me}
+  {\thepage}
+
+ \input{resume/1.summary.tex}
+ \input{resume/2.accomplisments.tex}
+ \input{resume/3.interests.tex}
+ \input{resume/4.skills.tex}
+ \input{resume/5.experience.tex}
+ \input{resume/6.education.tex}
+
+\end{document}
