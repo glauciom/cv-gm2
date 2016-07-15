@@ -4,6 +4,15 @@
 \usepackage{multicol}
 \usepackage{xcolor}% http://ctan.org/pkg/xcolor
 
+\usepackage{datenumber, fp}
+\newcounter{birthday}
+\newcounter{today}
+\setmydatenumber{birthday}{1982}{08}{26}
+\setmydatenumber{today}{\the\year}{\the\month}{\the\day}
+\FPsub\result{\thetoday}{\thebirthday}
+\FPdiv\myage{\result}{365.2425}
+\FPtrunc\myage{\myage}{0}
+
 \hypersetup{%
   colorlinks=false,% hyperlinks will be black
   linkbordercolor=red,% hyperlink borders will be red
@@ -25,13 +34,15 @@
 \linkedin{glauciom}
 \github{glauciom}
 
+\quote{\myage~years old, Brazilian, Married}
+
 \input{resume/0.tablecommands.tex}
 
 \begin{document}
 
 \makecvheader
 \begin{picture}(0,0)
-    \put(445,28){\includegraphics[width=7em]{resume/cv.jpg}}
+    \put(445,28){\frame{\includegraphics[width=7em]{resume/cv.jpg}}}
 \end{picture}
 
 \makecvfooter
