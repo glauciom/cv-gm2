@@ -1,5 +1,5 @@
 ## cv-gm2
-XeLatex of my CV.
+LuaLatex of my CV.
 
 Build it using
 
