@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>br.com.gme</groupId>
+	<groupId>br.com.gm2</groupId>
 	<artifactId>cv-gm2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.3</version>
 
 	<build>
 		<defaultGoal>clean latex:latex</defaultGoal>
@@ -16,7 +16,7 @@
 				<inherited>false</inherited>
 				<configuration>
 					<settings>
-						<texCommand>xelatex</texCommand>
+						<texCommand>lualatex</texCommand>
 					</settings>
 					</configuration>
 				</plugin>
